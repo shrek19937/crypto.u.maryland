@@ -11,9 +11,9 @@ s7 = "gipet qrg ,ennenarphbehsosostoytrgda loe eVepcagbrd iidwkn sns  kyy"
 plaintext = [s1, s2, s3, s4, s5, s6, s7]
 
 # Cryptography is the ps the practice
-for i in range(0, 68):
-    for line in range(0,7):
-        if (i == 67 and line > 0):
+for i in range(0, len(s1)):
+    for line in range(0,len(plaintext)):
+        if (i == len(s1) - 1 and line > 0):
             break;
         #print line, plaintext[line], len(plaintext[line])
         sys.stdout.write(plaintext[line][i])
